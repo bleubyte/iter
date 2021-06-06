@@ -4,7 +4,7 @@
 # Written by BleuByte
 
 # Get the Job ID's and save it in id.txt file
-plotman status | awk '{print $1}' | sed -n '1!p' >> id.txt
+plotman status | awk '{print $1}' | sed -n '1!p' > id.txt
 
 FILENAME="id.txt"
 
@@ -15,5 +15,4 @@ do
     plotman $1 $LINE
 done
 
-# Remove id.txt file
-rm id.txt
+
