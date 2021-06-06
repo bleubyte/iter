@@ -12,7 +12,6 @@ LINES=$(cat $FILENAME)
 # Loop through each line and execute the command
 for LINE in $LINES
 do
-    echo "Stopping Job # $LINE"
     plotman $1 $LINE
 done
 
